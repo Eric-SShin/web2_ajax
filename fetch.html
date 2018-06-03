@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="
+" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <input type="button" value="fetch" onclick="
+      fetch('css').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML = text;
+        })
+      })
+      ">
+  </body>
+  <h2>아티클에다 변경된 내용을 불러온다</h2>
+  <article>
+
+  </article>
+</html>
